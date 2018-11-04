@@ -1,0 +1,28 @@
+{
+  "name": "ananas",
+  "version": "1.0.0",
+  "main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"start": "parcel ./src/index.html"
+	},
+  "peerDependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "jest": "^23.6.0",
+    "parcel-bundler": "^1.10.3",
+    "react": "^16.6.0",
+    "react-core": "^0.0.0"
+  },
+  "dependencies": {
+    "mini-type": "^1.0.0"
+  }
+}
