@@ -2,7 +2,7 @@ import { PureComponent } from "React";
 
 class Ananas extends PureComponent {
   static demoProps = {
-    yeפ: "yep!",
+    yep: "yep!",
     working: {
       piece: "of software",
       recognizing: "objects",
