@@ -2,10 +2,10 @@
   "name": "ananas",
   "version": "1.0.0",
   "main": "index.js",
-	"license": "MIT",
-	"scripts": {
-		"start": "parcel ./src/index.html"
-	},
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
   "peerDependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0"
@@ -19,6 +19,7 @@
     "babel-core": "7.0.0-bridge.0",
     "jest": "^23.6.0",
     "parcel-bundler": "^1.10.3",
+    "prettier": "^1.14.3",
     "react": "^16.6.0",
     "react-core": "^0.0.0"
   },
