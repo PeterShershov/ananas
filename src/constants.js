@@ -1,0 +1,9 @@
+export const OBJECT = "Object";
+export const ARRAY = "Array";
+export const FUNCTION = "function";
+export const NUMBER = "number";
+export const STRING = "string";
+export const BOOLEAN = "boolean";
+export const PROMISE = "Promise";
+export const MAP = "Map";
+export const SET = "Set";

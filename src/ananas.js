@@ -1,22 +1,19 @@
-import { PureComponent } from "React";
+import React from "react";
+import ReactDOM from "react-dom";
+import DemoComponent from "./demo-component";
+import PropPanel from "./components/props-panel/props-panel";
 
-class Ananas extends PureComponent {
-  static demoProps = {
-    yep: "yep!",
-    working: {
-      piece: "of software",
-      recognizing: "objects",
-      like: {
-        a: ["boss"],
-        cause: "i am",
-        number: 1
-      }
-    }
-  };
+const demoProps = DemoComponent.demoProps;
 
-  render() {
-    return this.props.children;
-  }
-}
+import { ananas, demo_component } from "./ananas.scss";
 
-export default Ananas;
+const Ananas = props => (
+  <div className={ananas}>
+    <PropPanel props={props} />
+    <div className={demo_component}>
+      <DemoComponent {...demoProps} />
+    </div>
+  </div>
+);
+
+ReactDOM.render(<Ananas {...demoProps} />, document.querySelector(".root"));
