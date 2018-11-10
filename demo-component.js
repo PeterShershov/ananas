@@ -2,9 +2,9 @@ import React, { PureComponent } from "react";
 
 class DemoComponent extends PureComponent {
   static demoProps = {
-    firstLevelObject: { secondLevelObject: { string: "boom" } },
+    object: { secondLevelObject: { string: "boom" } },
     array: ["yep", "yep"],
-    number: 1
+    function: () => 2
   };
 
   render() {

@@ -5,7 +5,7 @@ import ObjectProp from "../object-prop/object-prop";
 import ArrayProp from "../array-prop/array-prop";
 import PropWrapper from "./prop-wrapper";
 
-import { OBJECT, STRING, NUMBER, BOOLEAN, ARRAY } from "../../../constants";
+import { OBJECT, STRING, NUMBER, BOOLEAN, ARRAY, FUNCTION } from "../../../constants";
 
 const Prop = ({ prop, title, className }) => {
   switch (type(prop)) {
@@ -19,6 +19,12 @@ const Prop = ({ prop, title, className }) => {
       return (
         <PropWrapper className={className} title={title}>
           {prop}
+        </PropWrapper>
+      );
+    case FUNCTION:
+      return (
+        <PropWrapper className={className} title={title}>
+          {prop.toString()}
         </PropWrapper>
       );
     case BOOLEAN:
