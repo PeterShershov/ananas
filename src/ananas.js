@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 import DemoComponent from "../demo-component";
 import PropPanel from "./components/props-panel/props-panel";
 
